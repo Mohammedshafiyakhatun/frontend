@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Image Gallery</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1>Responsive Image Gallery</h1>
+
+  <div class="filters">
+    <button class="active" data-filter="all">All</button>
+    <button data-filter="nature">Nature</button>
+    <button data-filter="city">City</button>
+    <button data-filter="people">People</button>
+  </div>
+
+  <div class="gallery">
+    <img src="C:\Users\shafiya\Downloads\nature.jpg"alt="Nature 1" />
+    <img src="C:\Users\shafiya\Downloads\ff.jpg" data-category="city" alt="City 1" />
+    <img src="C:\Users\shafiya\Downloads\beach.jpg" data-category="people" alt="People 1" />
+    <img src="C:\Users\shafiya\Downloads\beach.jpg" data-category="nature" alt="Nature 2" />
+    <img src="C:\Users\shafiya\Downloads\nature.jpg" data-category="city" alt="City 2" />
+    <img src="C:\Users\shafiya\Downloads\ff.jpg" data-category="people" alt="People 2" />
+  </div>
+
+  <div class="lightbox" id="lightbox">
+    <span class="close">&times;</span>
+    <span class="prev">&#10094;</span>
+    <img src="" alt="" />
+    <span class="next">&#10095;</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
